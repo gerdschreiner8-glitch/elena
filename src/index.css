@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #004494;
+  --color-secondary: #ffd500;
+  --color-text: #2d3436;
+  --color-bg: #f0f4f8;
+  --color-success: #27ae60;
+  --color-danger: #c0392b;
+  --color-heart: #e74c3c;
+  --color-accent: #f39c12;
+  --color-email-blue: #007bff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbar for nav */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
